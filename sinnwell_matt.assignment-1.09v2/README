@@ -1,0 +1,64 @@
+Programming Project 1.09-Pokemon Battles
+
+Most of the items in the assignment specs are adheared to properly, but there are a lot of things I changed.  Please be mindful of all the points below.
+
+A few bullet points about the battles:
+
+-When the game starts, you are given the choice of 3 pokemon to start with.
+
+-If you run into a battle with an NPC, they can have up to 6 pokemon.  This odds of the number of pokemon the NPC has are according to assignment specs.
+
+-During a battle, if an enemy pokemon is knocked out, it will no longer attack you.
+
+-Attacks can miss, this is implemented according to the assignment specs.
+
+-Before you start a battle, you can select which pokemon you would like to start with.  After that, you will have to stay with the pokemon you selected until either it is knocked out, or all of the opponents pokemon are knocked out.  If the pokemon you selected gets knocked out, the computer will automatically select the next pokemon in your collection of pokemon, if there are any available.
+
+-Using potions, using pokeballs, switching pokemon does not take up a turn.
+
+-If we use a potion we never go above max health.
+
+-Revives only take effect if the pokemon is knocked out (has 0 HP).
+
+-When you enter a battle the default pokemon is the first one in your collection of pokemon (vector) that has health
+
+-Visiting a pokemart refills all of your revives, potions, and pokeballs.
+
+-Visiting a pokecenter refills all of your pokemon's health.
+
+-If all our pokemon have 0 health the game is over and you will get a message
+
+-You start with 3 pokeballs, 3 potions, and 3 revives.
+
+-Revives and potions restore health according to assignment specs
+
+-If you use a pokeball, it is successfull 100% of the time
+
+-When you are in a battle you can see which pokemon are available to you by selecting the switch function.
+
+-You cannot flee from a battle with an NPC.  You can only flee during a wild pokemon battle.
+
+-Pokemon are only captured if you throw a pokeball at them.
+
+-NPC's can only have a max of 6 pokemon.
+
+-You can only flee a wild pokemon battle.  You cannot flee a battle with an NPC.  You will not always be successful on a flee.  If you are not successful, it does not take up a turn.
+
+-If you leave a partigular piece of terrian in the world and then return, the NPC's on that map no longer move.  They become frozen with loneliness when you leave the map.  Please consider this a feature and not a bug as I just haven't had time to fix it.  I think everything else works as intended.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

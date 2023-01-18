@@ -1,0 +1,36 @@
+Assignment 1.08 Loading pokemon
+
+I added the ability to encounter pokemon.  If you are moving through a piece of terrain and you encounter tall grass, which is represented by a :, there is a ten percent chance you might encounter a pokemon.
+
+If you encounter a pokemon, a window will appear showing the stats for the pokemon.
+
+Most of the stats are exactly the same as the assignment specs.  
+
+There is a 1 in 8192 chance that your pokemon will be shiny.  I don't think I ever saw one, but I promise you they are there.
+
+The pokemon will be either Male or Female.  There is a 50% chance of each.
+
+The initial level of a pokemon is a random number between the min level and max level.  The min level and max level for that pokemon is determined by your distance from the origin, and based on the assignment specs below.
+
+Each pokemon will have at least 1 move.  If they initially don't have any available moves, they are leveled up until they have at least one move.  If they are leveled up to their max allowed level for the area of the world they are in and still don't have at least one move, we select a new pokemon and try again.
+
+Moves are randomly selected from the available moves with an even distribution, just as the assignment spec stipulates.
+
+When the pokemon is created, it get's the base stats plus a random IV number added to each of them.  Each IV number for each stat is different and is a random number between 1 and 15.  When a pokemon is leveled up, it's HP and base stats are increased based on the formula's in the assignment specs.
+
+On a side note, in the last assignment I turned in, I had a bug where if I left a map, and then later returned to that map, the NPC's no longer moved.  They are still in the correct location, they just don't move.  I wish I had time to fix this, but I didn't.  I will try to fix this before the last assignment is due.  Please do not penalize me again for this bug.  Consider it a feature (at least for a week).  In my implementation, when the PC moves from one map to another, the NPC's on the original map become frozen with loneliness while the PC is gone.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
