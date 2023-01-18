@@ -1,0 +1,159 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+
+//print our table
+void print_table(int table[23][23]) {
+
+  int r, c;
+
+  for (r = 0; r < 23; r++) {
+    for (c = 0; c < 23; c++) {
+      if (table[r][c] == -1) {
+        printf("# ");
+      } else {
+        printf("%d ", table[r][c]);
+      }
+    }
+    printf("\n");
+  }
+  printf("\n");
+}
+
+//initialize our table
+void populate_table(int table[23][23]) {
+
+  int r, c;
+
+  for (r = 0; r < 23; r++) {
+    for (c = 0; c < 23; c++) {
+      table[r][c] = 0;
+    }
+  }
+
+}
+
+//add a piece of sand to a square
+void addSand(int table[23][23], int r, int c) {
+
+  //check out of bounds
+  if (r < 0 || r > 22 || c < 0 || c > 22) {
+    return;
+  }
+
+  //check for a sink
+  if (table[r][c] == -1) {
+    return;
+  }
+
+  //increase the pile
+  table[r][c]++;
+
+  //check to see if we need to spread
+  if (table[r][c] > 8) {
+    //reset the pile
+    table[r][c] = 1;
+
+    //call on the neighbors
+    //this could be cleaned up with initializing two arrays
+    //where the entries of the arrays are the change in
+    //x and y variables, but this works.
+
+    //up
+    addSand(table, r - 1, c);
+    //up right diag
+    addSand(table, r - 1, c + 1);
+    //right
+    addSand(table, r, c + 1);
+    //right down diag
+    addSand(table, r + 1, c + 1);
+    //down
+    addSand(table, r + 1, c);
+    //down left diag
+    addSand(table, r + 1, c - 1);
+    //left
+    addSand(table, r, c - 1);
+    //left up diag
+    addSand(table, r - 1, c - 1);
+  }
+
+}
+
+
+int main(int argc, char *argv[]) {
+
+  int t[23][23];
+  int i;
+  int fps = 1000000;
+
+  populate_table(t);
+
+  //1 2 3 4 5 6
+
+  //populate sinks amd starting piles
+   for (i = 1; i < argc; i++) {
+     if (!strcmp(argv[i], "--fps")) {
+       i++;
+       fps = atoi(argv[i]);
+     } else {
+        int x = atoi(argv[i]);
+        i++;
+        int y = atoi(argv[i]);
+        i++;
+        int startingValue = atoi(argv[i]);
+        t[x][y] = startingValue;
+     }
+   }   for (i = 1; i < argc; i++) {
+     if (!strcmp(argv[i], "--fps")) {
+       i++;
+       fps = atoi(argv[i]);
+     } else {
+        int x = atoi(argv[i]);
+        i++;
+        int y = atoi(argv[i]);
+        i++;
+        int startingValue = atoi(argv[i]);
+        t[x][y] = startingValue;
+     }
+   }
+
+
+  //print initial table
+   //  print_table(t);
+   //  usleep(1000000/fps);
+
+  //away we go
+  //populate sinks amd starting piles
+   for (i = 1; i <= argc - 3; i++) {
+     if (!strcmp(argv[i], "--fps")) {
+       i++;
+       fps = atoi(argv[i]);
+     } else {
+        int x = atoi(argv[i]);
+        i++;
+        int y = atoi(argv[i]);
+        i++;
+        int startingValue = atoi(argv[i]);
+        t[x][y] = startingValue;
+     }
+   }
+
+  //print initial table
+  print_table(t);
+  usleep(1000000/fps);
+
+  //away we go
+  i = 0;
+
+  while (1) {
+    addSand(t, 11, 11);
+    print_table(t);
+    usleep(1000000/fps);
+    //    printf("%d ", fps);
+    //    printf("\n");
+
+  }
+
+  return 0;
+}

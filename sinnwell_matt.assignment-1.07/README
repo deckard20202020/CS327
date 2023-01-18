@@ -1,0 +1,18 @@
+This is assignment 1.07 CSV Parsing
+
+The program will search for the files in 2 locations, the home directory and the shared folder.  It will check the shared folder and then check the HOME directory.  I have verified that both work.
+
+For the type_names file I only print out the rows with a local language value of 9.
+
+When I am reading the CSV files, if there is an attribute that has no value and it is an int, I save it in the struct as INT_MAX just like it says in the assignment spec.  When I print the value out to the screen, I don't print IINT_MAX.  Instead, I print the value -99.
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+10/15/2022-9:00pm tried to figure out ncurses.  No luck.  I need help.
+10/15/2022-10:00  I am struggling.  Getting weird errors when I move up.  Not sure why.  Hoping I don't have to switch to his code.
+10/16/2022-10:00 Still struggling
+10/18/2022-9:00 I think I got the move up to work
+10/19/2022-2:30-I think I got all the movements to work.  Now I need to deal with the battles.
+10/19/2022-4:00- I refactored my code.  I used to have an array of ints to store my characters.  Now I have an array of character pointers.
+10/19/2022-8:00-All my movements and battles work.  Just need to get the list of trainers added.
+10/19/2022-11:0-List of trainers is complete.

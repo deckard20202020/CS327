@@ -1,0 +1,5 @@
+9/30/22-9:00pm- made a new PQ for my PC and NPCs.  Placed all the characters on the map.
+10/3/2022-6:00pm- got my priority queue to work.  Made the rival and hiker able to move.
+10/3/22-10:30pm- my character table isn't working properly and I don't know why.  Discovered this when I tried to add a sentry and wanderer.  I messaged the professor on Piazza.  Hopefully I hear back from him tomorrow morning.
+10/4/22-5:00pm- finaly got all my NPC's placed and working correctly.  Now all I have to do is implement the switch.
+10/4/22-6:16pm-switch has been implemented.  I think I am done.

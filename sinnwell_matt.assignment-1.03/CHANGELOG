@@ -1,0 +1,5 @@
+9/16/2022/10:00pm-I added my player character to my maps
+9/17/22/6:30pm-I initialized a map for the hiker with max values.  I also wrote my printInt Table method that I will use to print out the distances.  Next up, Dijkstra's
+9/18/22/8:00pm- I started working on my djiksta's algorithm.  Need to tweek it a bit still
+9/19/22/9:00pm- My Djikstra's algorithm for hikers works.  Now I just need to extend it to Rivals.
+9/20/22/2:30pm- I extended my Djikstra's for the Rivals.  Should be done.

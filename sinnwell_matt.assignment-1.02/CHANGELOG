@@ -1,0 +1,7 @@
+9/11/2022/8:35-I copied my last assingment into a new folder.  Tried to refactor it to be a structure.  I created a new main file to use this new structure.  My latest idea is to make an array of size 401x401 of pointers pointing to these terrains that my last assignment created.  If there isn't one already there, make one, if there is one already there, print it out.
+
+9/12/2022/9:00.  Got the first map to print out and am able to move with n, s, e, w.  For some reason my map prints out twice when I read input.
+
+9/13/2022/10:30 I can fly! Implemented fly ablility and fixed roads on boarder of the world.
+
+9/14/22/4:00 Bug fixing and testing of my code.

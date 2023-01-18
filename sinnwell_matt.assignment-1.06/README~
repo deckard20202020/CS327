@@ -1,0 +1,5 @@
+This is assignment 1.03 Path Finding.  This utilizes my code from the first two assingments, but eliminates your ability to walk around the map.
+
+The first map that prints out is just a random piece of terrain that is generated.  In this case, I generate the terrain at 200,200.  I also randomly place the player character somewhere on one of the roads.
+
+I then perform two runs through Djikstra's algorithm generating two separate distance maps.  Each of these maps are then printed out.  One of the maps is for the Hiker character, while the other is for the Rival character.  Each map utilizes the values for each piece of terrain given to us in the assignment specs.  They will appear EXTREMEM

@@ -1,0 +1,20 @@
+This is assignment 1.06 Moving to Neighboring Maps and Porting to C++
+
+I successfuly ported all my code from C to C++.
+
+I added the ability for the PC to move into an exit.  This allows them to move from one map to a neighboring map.  If the PC has previously visited that map, the NPC's will maintain their location and turn order.  If the PC has not been to that map, the map will be generated and the PC placed in the appropriate location.  For example, if you are heading to a map to the right, your PC will be on the left side of that new map when you arrive.
+
+There is also a fly method.  This can be called when you type "f" as your movement characater.  The console then prompts you to enter 2 integers, separated by a space.  If you try to go out of bounds (for example, if you try to go to map 500 500) you will be told that you cannot go there.  Again, if you have already visited that map the location and turn order of the NPC's will be preserved.  If you fly to a map your PC will start at the intersection of the roads.
+
+Time will not pass in a map unless the PC is present.
+
+NPC's cannot move into exits.
+
+
+
+
+
+
+
+
+

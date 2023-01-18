@@ -1,0 +1,18 @@
+This is assignment 1.05 User Interface.
+
+This is a continuation of my last code.  So you are still allowed to enter the amount of NPC's if you wish.  If you don't enter a specific number, a default of 10 NPC's are placed on the map.
+
+You can move around the map as expected.
+
+If you move into a space where a NPC is located, a battle will ensue.  This is currently simulated with a new terminal showing up.  You can exit this terminal by simply pressing escape.
+
+If you try to move in a direction you are not allowed to move, you will get an error message at the bottom of the terminal.
+
+If you type 't' it will display a list of the trainers.  They will all be visible unless you entererd more than 20 NPC's.  The first digit will be the x coordinate of the pc - the x coordinate of the NPC.  The second digit will be the y corrdinate of the pc - the y coordinate of the NPC.  PLEASE NOTE- when you are initially taken to the screen, there will be no NPC's shown.  You will have to press the down arrow to show the first 20.  Then if you have more than 20, you can scroll down through the list.  If you hit the up arrow, you will be returned to the top of the list.
+
+If your PC walks into a battle a battle screen will appear.  Press escape to exit.  If you battle with a rival or hiker, they will no longer follow you.  They will just remain stationary.
+
+If you are on a Pokemart or Pokecenter and enter with the > sign, you will be brought to a screen that is particular to the Pokemart or Pokecenter.  You can exit with the < symbol.
+
+
+
